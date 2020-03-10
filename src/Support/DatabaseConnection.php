@@ -93,7 +93,7 @@ class DatabaseConnection {
 
 			case 'mysql':
 				return sprintf(
-							'select table_schema, table_name from information_schema.tables where table_schema=\'%s\';',
+							'select table_schema as table_schema, table_name as table_name from information_schema.tables where table_schema=\'%s\';',
 							$this->connection()->getDatabaseName()
 						);
 				break;
