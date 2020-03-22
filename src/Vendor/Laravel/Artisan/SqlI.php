@@ -1,6 +1,6 @@
 <?php namespace PragmaRX\Sqli\Vendor\Laravel\Artisan;
 
-class Sqli extends Base {
+class SqlI extends Base {
 
 	/**
 	 * Command name.

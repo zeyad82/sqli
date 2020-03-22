@@ -6,7 +6,7 @@ use PragmaRX\Sqli\Support\DatabaseConnection;
 use PragmaRX\Sqli\Support\Statement;
 use PragmaRX\Sqli\Support\Sqlinteractive;
 
-class Sqli
+class SqlI
 {
 	/**
 	 * DatabaseConnection object.

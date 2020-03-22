@@ -6,7 +6,7 @@ use Illuminate\Support\Arr;
 use PragmaRX\Sqli\Support\DatabaseConnection;
 use PragmaRX\Sqli\Vendor\Laravel\Artisan\Sqli as Command;
 
-class Sqlinteractive
+class SqlInteractive
 {
 	/**
 	 * The database connection object.
