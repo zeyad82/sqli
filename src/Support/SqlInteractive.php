@@ -4,7 +4,7 @@ namespace PragmaRX\Sqli\Support;
 
 use Illuminate\Support\Arr;
 use PragmaRX\Sqli\Support\DatabaseConnection;
-use PragmaRX\Sqli\Vendor\Laravel\Artisan\Sqli as Command;
+use PragmaRX\Sqli\Vendor\Laravel\Artisan\SqlI as Command;
 
 class SqlInteractive
 {
@@ -18,7 +18,7 @@ class SqlInteractive
 	/**
 	 * The referer Artisan command.
 	 *
-	 * @var \PragmaRX\Sqli\Vendor\Laravel\Artisan\Sqli
+	 * @var \PragmaRX\Sqli\Vendor\Laravel\Artisan\SqlI
 	 */
 	private $command;
 
@@ -74,7 +74,7 @@ class SqlInteractive
 	 * Constructor
 	 *
 	 * @param \PragmaRX\Sqli\Support\DatabaseConnection $databaseConnection
-	 * @param \PragmaRX\Sqli\Vendor\Laravel\Artisan\Sqli $command
+	 * @param \PragmaRX\Sqli\Vendor\Laravel\Artisan\SqlI $command
 	 * @param Readline $readline
 	 * @param Options $option
 	 * @param Commands $commands

@@ -4,7 +4,7 @@ namespace PragmaRX\Sqli;
 
 use PragmaRX\Sqli\Support\DatabaseConnection;
 use PragmaRX\Sqli\Support\Statement;
-use PragmaRX\Sqli\Support\Sqlinteractive;
+use PragmaRX\Sqli\Support\SqlInteractive;
 
 class SqlI
 {
@@ -34,9 +34,9 @@ class SqlI
 	 *
 	 * @param DatabaseConnection $database
 	 * @param Statement $statement
-	 * @param \PragmaRX\Sqli\Support\Sqlinteractive $sqlI
+	 * @param \PragmaRX\Sqli\Support\SqlInteractive $sqlI
 	 */
-	public function __construct(DatabaseConnection $database, Statement $statement, Sqlinteractive $sqlI)
+	public function __construct(DatabaseConnection $database, Statement $statement, SqlInteractive $sqlI)
 	{
 		$this->statement = $statement;
 		

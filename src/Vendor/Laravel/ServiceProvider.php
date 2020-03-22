@@ -2,17 +2,17 @@
 
 namespace PragmaRX\Sqli\Vendor\Laravel;
 
-use PragmaRX\Sqli\Sqli;
+use PragmaRX\Sqli\SqlI;
 use PragmaRX\Sqli\Support\Commands;
 use PragmaRX\Sqli\Support\Completer;
 use PragmaRX\Sqli\Support\Options;
 use PragmaRX\Sqli\Support\Readline;
 use PragmaRX\Sqli\Support\Statement;
-use PragmaRX\Sqli\Support\Sqlinteractive;
+use PragmaRX\Sqli\Support\SqlInteractive;
 use PragmaRX\Sqli\Support\WorkingDirectory;
 use PragmaRX\Sqli\Support\DatabaseConnection;
 use PragmaRX\Sqli\Vendor\Laravel\Artisan\Sql as SqlCommand;
-use PragmaRX\Sqli\Vendor\Laravel\Artisan\Sqli as SqliCommand;
+use PragmaRX\Sqli\Vendor\Laravel\Artisan\SqlI as SqliCommand;
 use PragmaRX\Support\ServiceProvider as PragmaRXServiceProvider;
 use PragmaRX\Sqli\Vendor\Laravel\Artisan\Select as SelectCommand;
 use PragmaRX\Sqli\Vendor\Laravel\Artisan\Delete as DeleteCommand;
@@ -101,7 +101,7 @@ class ServiceProvider extends PragmaRXServiceProvider {
 			return new Sqli(
 				$database,
 				new Statement(new WorkingDirectory),
-				new Sqlinteractive(
+				new SqlInteractive(
 						$database,
 						$app['select.sqli.command'],
 						new Readline($options, $commands),
